@@ -1,0 +1,625 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\documentclass[
+  american,
+  a4paper,
+  onecolumn]{article}
+\usepackage{xcolor}
+\usepackage[a4paper, left=2.0cm, right=2.0cm, top=1.9cm,
+bottom=2.54cm]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{xcolor}
+
+
+\setlength\fboxsep{0pt}
+
+\newcommand{\highlightYellow}[1]{%
+  \colorbox{yellow!25}{#1}%
+}
+
+\newcommand{\highlightBlue}[1]{%
+  \colorbox{blue!25}{#1}%
+}
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+
+% Force left alignment everywhere
+\AtBeginDocument{\RaggedRight}
+
+
+% \newlist{checklist}{itemize}{1}
+% \setlist[checklist]{label={}, left=0pt, nosep, after=\vspace{0.2em}}
+\setlist[itemize]{label={}, left=0pt, nosep}
+
+
+\newcommand{\checkbox}[1]{%
+  {%
+    \CheckBox[
+      name=item#1,
+      width=0.6em,
+      height=0.6em,
+      bordercolor={0 0 0}
+    ]{}
+  }%
+}
+
+% Read-only, checked checkbox
+\newcommand{\checkboxlocked}[1]{%
+  {%
+    \CheckBox[
+      name=lockeditem#1,
+      width=0.6em,
+      height=0.6em,
+      bordercolor={0 0 0},
+      checked,
+      readonly
+    ]{}
+  }%
+}
+
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Spring 2026 Assignments Overview},
+  pdfauthor={John Chandara},
+  pdflang={en-US},
+  pdfsubject={A semester-long assignment schedule produced by an
+undergraduate student compiling reading assignments, discussion leader
+duties, written reflections, and workshop deadlines across three courses
+--- Western Classics (WC), Buddhist Classics (BC), and Indian Classics
+(IC) --- for Spring 2026 at Dharma Realm Buddhist University. It
+functions as a personal academic planning reference rather than an
+instructor-issued syllabus, organizing coursework chronologically by
+week.},
+  pdfkeywords={academia, schedule, coursework},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Spring 2026 Assignments Overview}
+\author{John Chandara}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Upcoming Weeks}\label{upcoming-weeks}
+
+\subsection{Week 7}\label{week-7}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkbox{1} TUE 3/3 WC: Read Epictetus, \emph{The Handbook} (all)
+\item
+  \checkbox{2} TUE 3/3 BC: Read \emph{Yogācāra}: Vasubandhu's Thirty
+  Verses (reader)
+\item
+  \checkbox{3} WED 3/4 IC: Read \emph{The Mahābhārata} (Śakuntalā
+  episode) pages 155-171 (reader pages 217-227)
+\item
+  \checkbox{4} WED 3/4 IC: Discussion Leader: Adam Smith
+\item
+  \checkbox{5} THR 3/5 WC: Read Sextus Empiricus, \emph{Outlines of
+  Skepticism}: Bk.I, pp.1-12; In ``The Ten Modes'' pp.20-40:
+  {[}80{]}-{[}99{]}, {[}114{]}, {[}135{]}-{[}140{]}, {[}145-163
+\item
+  \checkbox{6} FRI 3/6 IC: Read \emph{The Recognition of Śakuntalā} by
+  Kālidāsa pages 51-95
+\item
+  \checkbox{7} FRI 3/6 IC: Discussion Leader: Adam Valadez
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 8}\label{week-8}
+
+Student Conferences
+
+\subsection{Week 9}\label{week-9}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkbox{8} TUE 3/17 WC: Read Sextus Empiricus, \emph{Outlines of
+  Skepticism}: read from ``ii Where should the investigation of
+  Dogmatism begin?'' to the end of the selection in the reader.
+\item
+  \checkbox{9} TUE 3/17 BC: Read \emph{Lotus Sūtra}: Ch. 1 \& 2
+\item
+  \checkbox{10} WED 3/18 IC: Read \emph{The Recognition of Śakuntalā}
+  pages 99-173
+\item
+  \checkbox{11} WED 3/18 IC: Discussion Leader: Lavanya
+\item
+  \checkbox{12} THR 3/19 WC: Read Seneca, \emph{On the Happy Life}
+  (reader)
+\item
+  \checkbox{13} THR 3/19 WC: Philosophical Claims (G1
+\item
+  \checkbox{14} FRI 3/20 IC: Read \emph{The Recognition of Śakuntalā}
+  pages 177-255
+\item
+  \checkbox{15} FRI 3/20 IC: Discussion Leader: Taylor
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 10}\label{week-10}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkbox{16} MON 3/23 Student Symposium
+\item
+  \checkbox{17} TUE 3/24 WC: Read Cicero, \emph{How to Be a Friend}
+\item
+  \checkbox{18} \highlightBlue{TUE 3/24 WC: Pre-Class Reflection}
+\item
+  \checkbox{19} TUE 3/24 BC: Read \emph{Lotus Sūtra}: Ch. 3, 4, \& 5
+\item
+  \checkbox{20} WED 3/25 IC: Read \emph{The Recognition of Śakuntalā}
+  pages 259-363
+\item
+  \checkbox{21} WED 3/25 IC: Discussion Leader: Caleb
+\item
+  \checkbox{22} THR 3/26 WC: Read NT \emph{Gospel of Mark}
+\item
+  \checkbox{23} FRI 3/27 IC: Writing Workshop topic \#3
+\item
+  \checkbox{24} SUN 3/29 WC: ``Live Like a Philosopher'' Journal 1 Due
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 11}\label{week-11}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkbox{25} TUE 3/31 BC: Read \emph{Lotus Sūtra}: Ch. 7 \& 16
+\item
+  \checkbox{26} TUE 3/31 WC: Read NT \emph{Gospel of Mark}
+\item
+  \checkbox{27} WED 3/32 IC: Read ``Nanda'' chapter in \emph{Udāna}
+  pages 25-28, \emph{Jātaka} 182 pages 63-65, \emph{Theragāthā} verses
+  157-8
+\item
+  \checkbox{28} \highlightYellow{WED 3/32 IC: Discussion Leader: John}
+\item
+  \checkbox{29} THR 4/2 WC: Read NT \emph{Gospel of John}
+\item
+  \checkbox{30} \highlightBlue{THR 4/2 WC: Pre-Class Reflection}
+\item
+  \checkbox{31} FRI 4/3 IC: Read \emph{Handsome Nanda (Saundarananda)}
+  by Aśvaghoṣa pages 35-129
+\item
+  \checkbox{32} FRI 4/3 IC: Discussion Leader: Tsering
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 12}\label{week-12}
+
+Spring Break
+
+\subsection{Week 13}\label{week-13}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkbox{33} TUE 4/14 WC: Read NT \emph{Gospel of John}
+\item
+  \checkbox{34} TUE 4/14 BC: Read Longer \emph{Sukhāvatīyuhā Sūtra}
+  (pages tbd)
+\item
+  \checkbox{35} WED 4/15 IC: Read \emph{Handsome Nanda (Saundarananda)}
+  pages 133-211
+\item
+  \checkbox{36} WED 4/15 IC: Discussion Leader: Shuxing
+\item
+  \checkbox{37} THR 4/16 WC: Read NT \emph{Book of Acts} 1-2, 5, 9,
+  17:16-34, 26-28
+\item
+  \checkbox{38} THR 4/16 WC: Read NT \emph{Paul's First Letter to the
+  Corinthians} 13-15
+\item
+  \checkbox{39} FRI 4/17 IC: Read \emph{Handsome Nanda (Saundarananda)}
+  pages 215-315
+\item
+  \checkbox{40} FRI 4/17 IC: Discussion Leader: Beth
+\item
+  \checkbox{41} SUN 4/17 WC: ??
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 14}\label{week-14}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkbox{42} TUE 4/21 WC: Sayings of Desert Fathers; Sayings
+  attributed to Desert Monastic Women (handout)
+\item
+  \checkbox{43} \highlightBlue{TUE 4/21 WC: Pre-class Reflection}
+\item
+  \checkbox{44} TUE 4/21 BC: Read Longer \emph{Sukhāvatīyuhā Sūtra}
+  (pages tbd) \& Shorter
+\item
+  \checkbox{45} WED 4/22 IC: Read \emph{Handsome Nanda (Saundarananda)}
+  pages 319-365
+\item
+  \checkbox{46} WED 4/22 IC: Discussion Leader: Ivwananji
+\item
+  \checkbox{47} THR 4/23 WC: Read Augustine, \emph{Confessions}
+\item
+  \checkbox{48} THR 4/23 WC: Philosophical Claims (G2)
+\item
+  \checkbox{49} FRI 4/24 IC: Writing Workshop topic \#4
+\item
+  \checkbox{50} SUN 4/26 WC: Draft of Strand Paper
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 15}\label{week-15}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkbox{51} TUE 4/28 WC: Read Augustine, \emph{Confessions}
+\item
+  \checkbox{52} TUE 4/28 BC: Read \emph{Platform Sūtra}: General
+  introduction by Fahui and Ch. 1, 2, 3, 4, \& 5
+\item
+  \checkbox{53} WED 4/29 IC: Read \emph{How the Nāgas Were Pleased} by
+  Harṣa pp.~19-91
+\item
+  \checkbox{54} WED 4/29 IC: Discussion Leader: Adam Smith
+\item
+  \checkbox{55} THR 4/30 WC: Read Augustine, \emph{Confessions}
+\item
+  \checkbox{56} FRI 5/1 IC: Read \emph{How the Nāgas Were Pleased} pages
+  95-167
+\item
+  \checkbox{57} FRI 5/1 IC: Discussion Leader: Adam Valadez
+\item
+  \checkbox{58} SUN 5/3 WC: Read ``Live Like a Philosopher'' Journal 2
+  Due
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 16}\label{week-16}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkbox{59} TUE 5/5 WC: Read Boethius, \emph{The Consolation of
+  Philosophy}
+\item
+  \checkbox{60} TUE 5/5 WC: Philosophical Claims (G1)
+\item
+  \checkbox{61} WED 5/6 IC: Read \emph{How the Nāgas Were Pleased} pages
+  171-223
+\item
+  \checkbox{62} TUE 5/5 BC: Read \emph{Platform Sūtra} Ch. 6, 7, \& 8
+\item
+  \checkbox{63} THR 5/7 WC: Read Boethius, \emph{The Consolation of
+  Philosophy}
+\item
+  \checkbox{64} FRI 5/8 IC: Read \emph{Meghadūta} by Kālidāsa pages
+  23-99
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 17}\label{week-17}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkbox{65} TUE 5/12 WC: Read Boethius, \emph{The Consolation of
+  Philosophy}
+\item
+  \checkbox{66} TUE 5/12 WC: Philosophical Claims (G2)
+\item
+  \checkbox{67} TUE 5/12 BC: Read \emph{Platform Sūtra} Ch. 9 \& 10
+\item
+  \checkbox{68} WED 5/13 IC: Writing Workshop topic \#5 or \#6
+\item
+  \checkbox{69} THR 5/14 WC: Read Boethius, \emph{The Consolation of
+  Philosophy}
+\item
+  \checkbox{70} FRI 5/15 IC: Presentations -- present the core of your
+  papers, adding any new, pertinent considerations on the topic arrived
+  at from later readings. Lead a short discussion with your cohort to
+  think deeply on your topic.
+\item
+  \checkbox{71} FRI 5/15 BC: Strand Paper Due
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 18}\label{week-18}
+
+Contemplative Exercise Immersion / Commencement
+
+\vspace{2em}
+
+\center{\textbf{END OF SEMESTER}}
+
+\clearpage
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Previous Weeks}\label{previous-weeks}
+
+\subsection{Week 1}\label{week-1}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkboxlocked{72} TUE 1/20 BC: \emph{Vimalakīrti} Sūtra: Ch 1-7
+\item
+  \checkboxlocked{73} TUE 1/20 WC: Presocratics (winter reading)
+\item
+  \checkboxlocked{74} FRI 1/21 IC: Selection from \emph{The Rāmāyaṇa of
+  Vālmīki}. Vol. 1 \emph{Bālakāṇḍa}: Sargas 1-5, 14-16, 65-66 (pages
+  121-135, 153-158, 248-251); and Dandekar's ``The Theory of
+  Puruṣārthas''
+\item
+  \checkboxlocked{75} THR 1/22 WC: Plato, \emph{Apology}
+\item
+  \checkboxlocked{76} FRI 1/23 IC: \emph{The Rāmāyaṇa of Vālmīki}. Vol.
+  2 \emph{Ayodhyākāṇḍa}: Sargas 7-10, 16, 57-58, 89-95, 107 (pages 94-
+  103, 114-118, 204-211, 270-287, 313-314)
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 2}\label{week-2}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkboxlocked{77} TUE 1/27 WC: Read Plato, \emph{Crito}
+\item
+  \checkboxlocked{78} TUE 1/27 WC: Philsophical Claims (G1)
+\item
+  \checkboxlocked{79} TUE 1/27 BC: Read \emph{Vimalakīrti} Sūtra: Ch
+  8-14
+\item
+  \checkboxlocked{80} WED 1/28 IC: Discussion Leader: Lavanya
+\item
+  \checkboxlocked{81} WED 1/28 IC: Read \emph{The Rāmāyaṇa of Vālmīki}.
+  Vol. 3 \emph{Araṇyakāṇḍa}: Sargas 41-47, 58, 61-62 (pages 171-190,
+  213-215, 221-224)
+\item
+  \checkboxlocked{82} THR 1/29 WC: Read Plato, \emph{Euthyphro}
+\item
+  \checkboxlocked{83} THR 1/29 WC: Philsophical Claims (G2)
+\item
+  \checkboxlocked{84} THR 1/30 IC: Read \emph{The Rāmāyaṇa of Vālmīki}.
+  Vol. 5 \emph{Sundarakāṇḍa}: Sargas 17-20, 28-30, 32, 34-35 (pages
+  164-174, 190-195, 198-200, 207-215)
+\item
+  \checkboxlocked{85} THR 1/30 IC: Discussion Leader: Taylor
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 3}\label{week-3}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkboxlocked{86} TUE 2/3 BC: Read \emph{Abhidharma}:
+  Abhidhammattha-saṅgaha (reader) Abhidharmakośabhāṣya (tr. Ven.
+  Dhammajoti), p.~197-207 (hand-out)
+\item
+  \checkboxlocked{87} TUE 2/3 BC: Group Adam presentation
+\item
+  \checkboxlocked{88} TUE 2/3 WC: Read Plato, \emph{Symposium}:
+  172a-195a (up to Agathon's speech); Sappho, ``Fragment 16'' (handout)
+\item
+  \checkboxlocked{89} WED 2/4 IC: Read \emph{The Rāmāyaṇa of Vālmīki}.
+  Vol. 6 Yuddhakāṇḍa: Sargas 16, 96-97, 102-106, 116 (pages 156-159,
+  434-439, 451-463, 487-494)
+\item
+  \checkboxlocked{90} WED 2/4 IC: Discussion Leader: Caleb
+\item
+  \checkboxlocked{91} THR 2/5 WC: Read Plato, \emph{Symposium}:
+  195a-210a (Agathon's Speech to the ``Higher Mysteries / Ladder of
+  Love'')
+\item
+  \checkboxlocked{92} \highlightBlue{THR 2/5 WC: Pre-class Reflection}
+\item
+  \checkboxlocked{93} FRI 2/6 IC: Read \emph{The Rāmāyaṇa of Vālmīki}.
+  Vol. 7 Uttarakāṇḍa: Sargas 41-50, 64-67, 84-89, 99-100 (pages 330-347,
+  380-389, 414-425, 438-441)
+\item
+  \checkboxlocked{94} \highlightYellow{FRI 2/6 IC: Discussion Leader:
+  John}
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 4}\label{week-4}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkboxlocked{95} TUE 2/10 WC: Read Plato, \emph{Symposium}:
+  210a-end
+\item
+  \checkboxlocked{96} TUE 2/10 BC: Read \emph{Abhidharma}: Visuddhimagga
+  on the five aggregates (reader)
+\item
+  \checkboxlocked{97} TUE 2/10 BC: Group Beth presentation
+\item
+  \checkboxlocked{98} WED 2/11 IC: Writing Workshop topic \#1
+\item
+  \checkboxlocked{99} THR 2/12 WC: Read Aristotle, \emph{Nicomachean
+  Ethics} (NE) Book 1
+\item
+  \checkboxlocked{100} FRI 2/13 IC: Read \emph{Rāma's Last Act
+  (Uttararāmacaritam)} by Bhavabhūti pages 65-123
+\item
+  \checkboxlocked{101} FRI 2/13 IC: Discussion Leader: Tsering
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 5}\label{week-5}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkboxlocked{102} TUE 2/17 WC: Philsophical Claims (G1)
+\item
+  \checkboxlocked{103} TUE 2/17 WC: Aristotle, \emph{NE} Book 2
+\item
+  \checkboxlocked{104} TUE 2/17 BC: Read \emph{Madhyamaka}: Heart Sūtra
+  + Verses on the Middle Ch. 1, 15, 24 (reader)
+\item
+  \checkboxlocked{105} WED 2/18 IC: Read \emph{Rāma's Last Act
+  (Uttararāmacaritam)} pages 127-231
+\item
+  \checkboxlocked{106} WED 2/18 IC: Discussion Leader: Shuxing
+\item
+  \checkboxlocked{107} THR 2/19 WC: Read Aristotle, \emph{NE} Book 3
+  (CE?)
+\item
+  \checkboxlocked{108} FRI 2/20 IC: Read \emph{Rāma's Last Act
+  (Uttararāmacaritam)} pages 235-335
+\item
+  \checkboxlocked{109} FRI 2/20 IC: Discussion Leader: Beth
+\end{itemize}
+
+\end{multicols}
+}
+
+\subsection{Week 6}\label{week-6}
+
+{\begin{multicols}{2}
+
+\begin{itemize}
+\tightlist
+\item
+  \checkboxlocked{110} TUE 2/24 WC: Read Aristotle, \emph{NE} Book 4
+  (CE?)
+\item
+  \checkboxlocked{111} \highlightBlue{TUE 2/24 WC: Pre-class Reflection}
+\item
+  \checkboxlocked{112} TUE 2/24 BC: Read \emph{Yogācāra}: Vasubandhu's
+  Twenty Verses (reader)
+\item
+  \checkboxlocked{113} WED 2/25 IC: Read \emph{Rāma's Last Act
+  (Uttararāmacaritam)} pages 337-389
+\item
+  \checkboxlocked{114} WED 2/25 IC: Discussion Leader: Ivwananji
+\item
+  \checkboxlocked{115} THR 2/26 WC: Read Epicurus, ``Letter to
+  Herodotus'' and ``Principle Dodctrines'' (all selections in reader)
+\item
+  \checkboxlocked{116} THR 2/26 WC: Philosophical Claims (G2)
+\item
+  \checkboxlocked{117} FRI 2/27 IC: Writing Workshop topic \#2
+\end{itemize}
+
+\end{multicols}
+}
+
+\clearpage
+
+\twocolumn
+
+\end{document}

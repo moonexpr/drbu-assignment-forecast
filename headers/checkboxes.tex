@@ -1,0 +1,39 @@
+\usepackage{multicol}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+
+% Force left alignment everywhere
+\AtBeginDocument{\RaggedRight}
+
+
+% \newlist{checklist}{itemize}{1}
+% \setlist[checklist]{label={}, left=0pt, nosep, after=\vspace{0.2em}}
+\setlist[itemize]{label={}, left=0pt, nosep}
+
+
+\newcommand{\checkbox}[1]{%
+  {%
+    \CheckBox[
+      name=item#1,
+      width=0.6em,
+      height=0.6em,
+      bordercolor={0 0 0}
+    ]{}
+  }%
+}
+
+% Read-only, checked checkbox
+\newcommand{\checkboxlocked}[1]{%
+  {%
+    \CheckBox[
+      name=lockeditem#1,
+      width=0.6em,
+      height=0.6em,
+      bordercolor={0 0 0},
+      checked,
+      readonly
+    ]{}
+  }%
+}
+
