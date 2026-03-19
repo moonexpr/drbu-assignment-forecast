@@ -47,7 +47,8 @@ $(OUTPDF): $(SRC) $(HEADERS) $(FILTERS) | $(OUTDIR)
 		$(HEADER_FLAGS) \
 		$(LUA_FLAGS) \
 		-o $@
-	mv $(OUTPDF) ${HOME}/iCloud/Documents
+	# Move output to iCloud, if directory exists.
+	[[ -d ${HOME}/iCloud/Documents ]] && cp $(OUTPDF) ${HOME}/iCloud/Documents/
 
 
 $(OUTDIR):
