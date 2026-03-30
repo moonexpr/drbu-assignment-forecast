@@ -5,7 +5,7 @@
 PANDOC      := pandoc
 PDF_ENGINE  := xelatex
 
-SEMESTER		:= Sp26
+SEMESTER	:= Sp26
 SRC         := $(SEMESTER).md
 OUTDIR      := build
 OUTPDF      := $(OUTDIR)/$(SEMESTER)_Coursework_Forecast.pdf
@@ -28,7 +28,7 @@ LUA_FLAGS   := $(foreach f,$(FILTERS),--lua-filter=$(f))
 # Targets
 # ----------------------------
 
-.PHONY: all pdf tex clean ast
+.PHONY: all pdf tex clean ast archive
 
 all: pdf
 
@@ -57,6 +57,10 @@ $(OUTDIR):
 
 clean:
 	rm -rf $(OUTDIR)
+
+# Move past weeks from Upcoming to Previous, marking items complete
+archive:
+	python3 archive_weeks.py $(SRC)
 
 # Debug: inspect Pandoc AST
 ast:
